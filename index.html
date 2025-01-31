@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Militia Battlezone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mini Militia Battlezone</h1>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#tournaments" class="nav-link">Tournaments</a>
+            <a href="#highlights" class="nav-link">Highlights</a>
+            <a href="#leaderboard" class="nav-link">Leaderboard</a>
+            <a href="#chat" class="nav-link">Chat</a>
+            <a href="#login" class="nav-link">Login/Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section (Default Loaded) -->
+        <section id="home" class="active">
+            <h2>Welcome to Mini Militia Battlezone!</h2>
+            <p>Join the ultimate tournament experience.</p>
+            <div class="download-links">
+                <h3>Mini Militia Classic Beta</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.appsomniacs.da2" target="_blank">Android</a>
+                <a href="https://apps.apple.com/us/app/mini-militia-doodle-army-2/id1070074705" target="_blank">iOS</a>
+                <h3>Mini Militia War IO</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.minimilitia.wario" target="_blank">Android</a>
+                <a href="https://apps.apple.com/us/app/mini-militia-war-io/id1234567890" target="_blank">iOS</a>
+            </div>
+        </section>
+
+        <!-- Other Sections (Initially Hidden) -->
+        <section id="tournaments" class="hidden">
+            <h2>Live Tournaments</h2>
+            <div id="timer">Next Tournament: <span id="countdown">00:00:00</span></div>
+            <div id="live-tournaments"></div>
+        </section>
+
+        <section id="highlights" class="hidden">
+            <h2>Highlights</h2>
+            <div id="highlight-clips">
+                <p>Best Mini Militia clips coming soon!</p>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="hidden">
+            <h2>Leaderboard</h2>
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="chat" class="hidden">
+            <h2>Chat with Players</h2>
+            <div id="chat-box">
+                <div id="messages"></div>
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+            </div>
+        </section>
+
+        <section id="login" class="hidden">
+            <h2>Login / Sign Up</h2>
+            <form id="login-form">
+                <input type="email"
